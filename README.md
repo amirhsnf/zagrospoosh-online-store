@@ -1,77 +1,95 @@
-# Zagrospoosh Online Store
+# Zagrospoosh Online Store (Showcase)
 
-This project is a fully customized e-commerce website developed for **Zagrospoosh**, a major Iranian manufacturer of formal clothing such as suits and jackets. The company operates a central factory in Tehran and has several branches across different cities in Iran.
+This repository showcases the development of a custom e-commerce website for **Zagrospoosh**, a leading Iranian manufacturer of formal wear and suits.
 
----
-
-## 🔧 Project Overview
-
-The core system is built using **WordPress** and **WooCommerce**, integrated via web services with **Rahkaran ERP** for real-time synchronization of product data, including:
-
-- Product creation based on existing ERP entries
-- Real-time stock and price inquiry
-- Automatic generation of product variations based on Zagrospoosh’s internal coding system
-- Scheduled synchronization every 15 minutes using cron jobs
+🔗 **Live Website:** [https://zagrospoosh.com](https://zagrospoosh.com)
 
 ---
 
-## 🖥️ Custom Admin Panel
+## 🏢 About the Client
 
-A dedicated **Angular-based admin panel** was built to give the Zagrospoosh team full control over the website’s content and features. The backend of the admin panel is developed in PHP.
-
-Key features of the admin panel include:
-
-- Managing media files  
-  ![Media Management](/screenshots/admin-panel-media.jpg)
-  
-- Managing orders  
-  ![Orders](/screenshots/admin-panel-orders.jpg)
-  
-- Managing products, their features, categories, tags, and color groups  
-  ![Products](/screenshots/admin-panel-products.jpg)
-  
-- Managing users and user comments  
-- Managing SMS communications
-- Creating and editing static pages and homepage data
-- Managing header and footer menus
+Zagrospoosh is a clothing manufacturer based in Tehran with multiple retail branches across Iran. Their operations are managed via the **Rahkaran ERP** system.
 
 ---
 
-## 📁 PDF Catalogs
+## ⚙️ Project Overview
 
-A custom post type was created for displaying Zagrospoosh’s product catalogs in PDF format.
+The project involved building a custom online store using **WordPress** and **WooCommerce**, tightly integrated with Zagrospoosh’s **ERP system (Rahkaran)**. Key features and integrations:
 
-![Catalogs](/screenshots/catalogs.jpg)
+- **Product Syncing with ERP:**
+  - Product creation, price lookup, and real-time stock checks via web services.
+  - Internal coding system maps ERP product codes to WooCommerce product variations (size/color).
+  - Cron jobs every 15 minutes to sync product prices and stock.
 
----
+- **Custom Angular Admin Panel:**
+  - Built to provide a clean, focused interface for content managers.
+  - Connected to WordPress backend via REST APIs.
+  - Features include:
+    - Product & variation management
+    - Media & catalog uploads
+    - Home page content management
+    - Menu management (header/footer)
+    - Custom post type for PDF catalogs
+    - Page editing
+    - Order & user management
+    - Comment & SMS logs management
 
-## 🛒 Storefront
-
-The client-side website is custom designed and developed using **PHP** and **jQuery**. It includes:
-
-- Custom homepage  
-  ![Homepage](/screenshots/frontpage.jpg)
-
-- Product listing pages  
-  ![Shop](/screenshots/shop.jpg)
-
-- Product detail pages with real-time stock and price info  
-  ![Product Detail](/screenshots/product.jpg)
-
----
-
-## 👨‍💻 Contributors
-
-- **Amir Navidfar** – Full stack developer  
-  - Responsible for: Client-side website, backend of admin panel
-
-- **Arman Molaei** – Frontend developer  
-  - Responsible for: Angular-based admin panel frontend
+- **Website Frontend:**
+  - Fully custom theme built using **PHP** and **jQuery**
+  - Optimized for performance and mobile responsiveness
 
 ---
 
-## 🔒 Source Code
+## 🧑‍💻 Stack
 
-> This is a private project developed exclusively for Zagrospoosh.  
-> Due to confidentiality, the source code is not publicly available.
+| Layer         | Tech                       |
+|---------------|----------------------------|
+| CMS           | WordPress + WooCommerce    |
+| Frontend Site | PHP + jQuery               |
+| Admin Panel   | Angular                    |
+| Backend API   | Custom PHP (REST)          |
+| ERP           | Rahkaran ERP (Web Services) |
 
+---
+
+## 📸 Screenshots
+
+### 🔹 Website Frontend
+
+**Homepage**  
+![Homepage](screenshots/frontpage.jpg)
+
+**Shop Page**  
+![Shop](screenshots/shop.jpg)
+
+**Product Page**  
+![Product](screenshots/product.jpg)
+
+**Catalog Section (PDF)**  
+![Catalogs](screenshots/catalogs.jpg)
+
+---
+
+### 🔹 Admin Panel (Angular)
+
+**Products Management**  
+![Admin Products](screenshots/admin-panel-products.jpg)
+
+**Orders Management**  
+![Admin Orders](screenshots/admin-panel-orders.jpg)
+
+**Media Library**  
+![Admin Media](screenshots/admin-panel-media.jpg)
+
+---
+
+## 🔒 Note
+
+Due to the proprietary nature of this project, **source code is not publicly available**. This repository serves only as a portfolio showcase.
+
+---
+
+## 👨‍💻 Authors
+
+- **Frontend (Client Website)** and **Backend (Admin APIs):** [Amir Navidfar](https://github.com/navidfar)
+- **Admin Panel UI (Angular):** Arman Molaei
