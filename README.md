@@ -91,5 +91,5 @@ Due to the proprietary nature of this project, **source code is not publicly ava
 
 ## 👨‍💻 Authors
 
-- **Frontend (Client Website)** and **Backend (Admin APIs):** [Amir Navidfar](https://github.com/navidfar)
+- **Frontend (Client Website)** and **Backend (Admin APIs):** [Amir Navidfar](https://github.com/amirhsnf)
 - **Admin Panel UI (Angular):** Arman Molaei
